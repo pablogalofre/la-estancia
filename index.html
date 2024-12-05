@@ -3,42 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Estancia - Viviendo la Tradición del Campo</title>
+    <title>La Estancia - Tradición y Futuro</title>
     <style>
+        /* Global Styles */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f9f9f9;
             color: #333;
         }
+
+        /* Header */
         header {
-            background-color: #6a4f4b;
-            color: white;
-            padding: 20px;
+            background-color: #14213d;
+            color: #ffffff;
             text-align: center;
+            padding: 20px 10px;
         }
+
         header h1 {
             margin: 0;
             font-size: 2.5em;
         }
-        nav {
-            background-color: #8c6b64;
-            padding: 10px;
-            display: flex;
-            justify-content: center;
+
+        header p {
+            margin: 0;
+            font-size: 1.2em;
+            font-weight: 300;
         }
+
+        /* Navigation */
+        nav {
+            background-color: #fca311;
+            padding: 10px;
+            text-align: center;
+        }
+
         nav a {
-            color: white;
+            color: #ffffff;
             margin: 0 15px;
             text-decoration: none;
             font-weight: bold;
         }
+
         nav a:hover {
             text-decoration: underline;
         }
+
+        /* Hero Section */
         .hero {
-            background-image: url('finca-home.jpg'); /* Reemplaza con la ruta de tu imagen */
+            background-image: url('https://images.unsplash.com/photo-1576085897111-879d12d8d555?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1600');
             background-size: cover;
             background-position: center;
             height: 500px;
@@ -51,68 +66,121 @@
             text-align: center;
             padding: 20px;
         }
-        .cta-button {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #8c6b64;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            margin-top: 20px;
-        }
-        .cta-button:hover {
-            background-color: #6a4f4b;
-        }
+
+        /* Sections */
         section {
-            padding: 20px;
+            padding: 50px 20px;
             max-width: 1200px;
             margin: 0 auto;
         }
+
         section h2 {
-            color: #6a4f4b;
-        }
-        footer {
-            background-color: #6a4f4b;
-            color: white;
+            color: #14213d;
             text-align: center;
-            padding: 10px;
-            position: relative;
-            bottom: 0;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        section p {
+            text-align: center;
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-bottom: 40px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery img {
             width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Call to Action */
+        .cta {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .cta a {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #14213d;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .cta a:hover {
+            background-color: #fca311;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #14213d;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
         }
     </style>
 </head>
 <body>
+
+    <!-- Header -->
     <header>
         <h1>La Estancia</h1>
-        <p>Viviendo la tradición del campo en armonía con el futuro</p>
+        <p>Donde la tradición rural se une con la modernidad</p>
     </header>
+
+    <!-- Navigation -->
     <nav>
         <a href="#vision">Nuestra Visión</a>
-        <a href="#proyecto">El Proyecto</a>
-        <a href="#comunidad">Sé Parte</a>
+        <a href="#galeria">Galería</a>
         <a href="#contacto">Contacto</a>
     </nav>
+
+    <!-- Hero Section -->
     <div class="hero">
-        <p>Descubre un lugar donde la tradición rural se une con la modernidad</p>
-        <a href="#proyecto" class="cta-button">Explora Más</a>
+        <p>Bienvenido a La Estancia</p>
     </div>
+
+    <!-- Vision Section -->
     <section id="vision">
         <h2>Nuestra Visión</h2>
-        <p>En La Estancia, creemos que el campo no es solo un lugar, sino un estilo de vida que merece ser protegido. Nuestro proyecto inmobiliario fusiona la vida rural con la modernidad, preservando la cultura y el medio ambiente para las generaciones futuras.</p>
+        <p>En La Estancia, preservamos la esencia del campo mientras construimos un futuro sostenible. Vive la tranquilidad de la naturaleza en un entorno diseñado para conectar tradición y modernidad.</p>
     </section>
-    <section id="proyecto">
-        <h2>El Proyecto</h2>
-        <p>La Estancia es un desarrollo único en La Mesa, Cundinamarca, diseñado para integrar arquitectura moderna con la esencia del campo. Ofrecemos lotes y viviendas con espacios comunitarios como huertas, senderos naturales y talleres de tradición rural.</p>
+
+    <!-- Gallery Section -->
+    <section id="galeria">
+        <h2>Galería</h2>
+        <div class="gallery">
+            <img src="https://via.placeholder.com/400x300" alt="Imagen 1">
+            <img src="https://via.placeholder.com/400x300" alt="Imagen 2">
+            <img src="https://via.placeholder.com/400x300" alt="Imagen 3">
+            <img src="https://via.placeholder.com/400x300" alt="Imagen 4">
+        </div>
     </section>
-    <section id="comunidad">
-        <h2>Sé Parte de La Estancia</h2>
-        <p>Únete a una comunidad que comparte tu amor por la vida tranquila y en armonía con la naturaleza. Explora nuestras opciones de lotes y viviendas y haz parte de un proyecto que mira hacia el futuro sin olvidar sus raíces.</p>
-        <a href="#contacto" class="cta-button">Contáctanos</a>
+
+    <!-- Call to Action -->
+    <section class="cta">
+        <a href="#contacto">Contáctanos</a>
     </section>
-    <footer id="contacto">
-        <p>La Estancia, La Mesa, Cundinamarca | Teléfono: +57 321 490 0100 | Email: info@laestancia.com</p>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 La Estancia. Todos los derechos reservados.</p>
     </footer>
+
 </body>
 </html>
